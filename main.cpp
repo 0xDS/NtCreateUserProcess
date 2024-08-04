@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
 	// Initialize the Unicode strings
 	RtlInitUnicodeString(&ImagePath, widePath);
 	RtlInitUnicodeString(&NtImagePath, fullPath);
-	RtlInitUnicodeString(&Params, (PWSTR)L"\"C:\\WINDOWS\\SYSTEM32\\cmd.exe\" /k echo Hello world!");
+	RtlInitUnicodeString(&Params, (PWSTR)L"\"C:\\WINDOWS\\SYSTEM32\\cmd.exe\"");
 	// Create the process parameters
 	PRTL_USER_PROCESS_PARAMETERS ProcessParameters = NULL;
 	RtlCreateProcessParametersEx(&ProcessParameters, &ImagePath, NULL, NULL, &Params, NULL, NULL, NULL, NULL, NULL, RTL_USER_PROCESS_PARAMETERS_NORMALIZED);

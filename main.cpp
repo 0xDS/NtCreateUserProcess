@@ -1,14 +1,3 @@
-/*
- * Code adapted from a Stack Overflow post:
- * "How is STARTUPINFO from CreateProcessW used in RtlCreateUserProcess?"
- * Source: https://stackoverflow.com/questions/77853162/how-is-startupinfo-from-createprocessw-used-in-rtlcreateuserprocess
- *
- * This code demonstrates creating a process using RtlCreateUserProcess.
- * 
- * Added functionality to retrieve the image path from command line arguments.
- * This allows for dynamic specification of the executable path when running the program.
- */
-
 #include <cstdio>
 #include <Windows.h>
 #include "imports.h"
